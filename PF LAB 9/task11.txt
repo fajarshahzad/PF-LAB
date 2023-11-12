@@ -1,0 +1,8 @@
+#include<iostream>
+using namespace std;
+mai()
+{
+	string word;
+	cout<<"Enter a string: ";
+	getline(cin,word);
+	

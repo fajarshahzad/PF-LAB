@@ -1,0 +1,17 @@
+#include<iostream>
+using namespace std;
+main()
+{
+	float quater,dime,nickel,penny,totalAmount;
+	cout<<"Enter quaters: ";
+	cin>>quater;
+	cout<<"Enter dimes: ";
+	cin>>dime;
+	cout<<"Enter  nickels: ";
+	cin>>nickel;
+	cout<<"Enter pennies: ";
+	cin>>penny;
+	cout<<"Enter total due amount: ";
+	cin>>totalAmount;
+
+	

@@ -1,0 +1,12 @@
+#include<iostream>
+using namespace std;
+main()
+{
+	int x;
+	cout<<"Enter the number of elements: ";
+	cin>>x;
+	for(int i=1;i<=x;i++)
+	{
+	cout<<"Enter "<<x<<" numbers , one per line:"<<endl;
+	}
+}

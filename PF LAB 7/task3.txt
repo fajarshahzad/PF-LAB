@@ -1,0 +1,25 @@
+#include<iostream>
+using namespace std;
+int totalDigits(int n);
+main()
+{
+	int n;
+	cout<<"Enter a number: ";
+	cin>>n;
+	int result=totalDigits(n);
+	cout<<result;
+}
+int totalDigits(int n)
+{
+	int a=0;
+	if(n<0)
+	{
+	n=-n;
+	}
+	while(n>0)
+	{
+	n=n/10;
+	a++;
+	}
+	return a;
+}

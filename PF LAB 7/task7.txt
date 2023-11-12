@@ -1,0 +1,43 @@
+#include<iostream>
+using namespace std;
+int numberCount(int count);
+main()
+{
+	int count;
+	cout<<"Enter the numbers count: ";
+	cin>>count;
+	int result=numberCount(count);
+	cout<<result;
+}
+int numberCount(int count)
+{
+	float p1=0, p2=0, p3=0, p4=0, p5=0;
+	int number;
+	while(number>0)
+	{
+	cout<<"Enter a number: ";
+	cin>>number;
+	if(number<=199)
+	{
+	p1=p1+1;
+	}
+	if(number<200||number<400)
+	{
+	p2=p2+1;
+	}
+	if(number<400||number<600)
+	{
+	p3=p3+1;
+	}
+	if(number<600||number<800)
+	{
+	p4=p4+1;
+	}
+	if(number>=800)
+	{
+	p5=p5+1;
+	}
+	cout<<(p1/count)*100<<"%"<<endl;
+}
+	
+	

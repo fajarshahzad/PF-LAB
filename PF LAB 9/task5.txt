@@ -1,0 +1,13 @@
+#include<iostream>
+using namespace std;
+main()
+{
+	int x;
+	cout<<"Enter the number of elements: ";
+	cin>>x;
+	int arr[x];
+	cout<<"Enter"<<x<<" numbers, one per line: ";
+	for(int i;i<x;i++)
+	{
+	cin>>arr[i];
+	}

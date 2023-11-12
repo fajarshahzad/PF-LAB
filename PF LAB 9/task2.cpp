@@ -1,0 +1,16 @@
+#include<iostream>
+using namespace std;
+main()
+{
+	string word;
+	cout<<"Enter a String: ";
+	cin>>word;
+	string reverse="";
+	for(int x=word.length()-1;x>=0;x--)
+	{
+	reverse=reverse+word[x];
+	}
+	cout<<"Reversed String: "<<reverse;
+}
+
+	 
