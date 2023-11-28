@@ -1,0 +1,31 @@
+#include <iostream>
+using namespace std;
+int countIdenticalRows(int matrix[][3], int numRows) {
+    int identicalRowCount = 0;
+    for (int i = 0; i < numRows - 1; ++i) {
+        for (int j = i + 1; j < numRows; ++j) {
+            bool isIdentical = true;
+
+            for (int k = 0; k < 3; ++k) {
+                if (matrix[i][k] != matrix[j][k]) {
+                    isIdentical = false;
+                    break;
+                }
+            }
+            if (isIdentical) {
+                identicalRowCount++;
+            }
+        }
+    }
+
+    return identicalRowCount;
+}
+ main() {
+    int col=3;
+int numRow;
+cout<<"Enter the number of rows of the array: ";
+cin>>numRow;
+    int identicalRowCount = countIdenticalRows(matrix, numRows);
+    cout << "Total number of identical rows: " << identicalRowCount << endl;
+
+}

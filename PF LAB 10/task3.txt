@@ -1,0 +1,15 @@
+#include<iostream>
+using namespace std;
+string Ship(string arr[5][5],string coordinate);
+main()
+{
+	string coordinate;
+	cout<<Enter coordinate to fire torpedo: ";
+	cin>>coordinate;
+	string output=Ship(arr,coordinate);
+	cout<<output;
+}
+string Ship(string arr[5][5],string coordinate)
+{
+	
+	

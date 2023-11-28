@@ -1,0 +1,25 @@
+#include<iostream>
+using namespace std;
+void PrintSum(int arr[][3],int rowSize);	
+main()
+{
+	int rowSize; 
+	cout<<"Enter row size: ";
+	cin>>rowSize;
+	int arr[rowSize][3];
+	PrintSum(arr,rowsize);
+}
+void PrintSum(int arr[][3],int rowSize)
+{
+	int sum=0;
+	cout<<"Enter the elements of the matrix: ";
+	for(int i=0;i<rowSize;i++)
+	{
+	for(int j=0;j<3;j++)
+	{
+	cin>>arr[i][j];
+	sum=sum+arr[i][j];
+	}
+	}
+}
+ 
